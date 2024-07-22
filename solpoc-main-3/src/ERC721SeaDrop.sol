@@ -98,33 +98,33 @@ contract ERC721SeaDrop is
         // Initialize MultiConfigureStruct with the provided config.
         multiConfigure(
             MultiConfigureStruct({
-                maxSupply: config.maxSupply,
+                maxSupply: 5,
                 baseURI: config.baseURI,
                 contractURI: config.contractURI,
-                seaDropImpl: config.seaDropImpl,
-                publicDrop: config.publicDrop,
-                dropURI: config.dropURI,
-                allowListData: config.allowListData,
-                creatorPayoutAddress: config.creatorPayoutAddress,
-                provenanceHash: config.provenanceHash,
-                allowedFeeRecipients: config.allowedFeeRecipients,
+                seaDropImpl: 0x00005EA00Ac477B1030CE78506496e8C2dE24bf5,
+                publicDrop: 0,1721672940,1721676540,5,1000,true,
+                dropURI: https://opensea-drops.mypinata.cloud/ipfs/bafkreibqs5gt2usjbphs7msrto4rep2vwy7nfwrtqjw7a5c6vrcksimk3i,
+                allowListData: 0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+                creatorPayoutAddress: 0xcCBEF8aeF8A90a95fd5E8D044F2c8620934DdBE1,
+                provenanceHash: 0x0000000000000000000000000000000000000000000000000000000000000000,
+                allowedFeeRecipients: 0x0000a26b00c1F0DF003000390027140000fAa719,
                 disallowedFeeRecipients: config.disallowedFeeRecipients,
-                allowedPayers: config.allowedPayers,
+                allowedPayers: 0xEF0B56692F78A44CF4034b07F80204757c31Bcc9,
                 disallowedPayers: config.disallowedPayers,
                 tokenGatedAllowedNftTokens: config.tokenGatedAllowedNftTokens,
                 tokenGatedDropStages: config.tokenGatedDropStages,
                 disallowedTokenGatedAllowedNftTokens: config.disallowedTokenGatedAllowedNftTokens,
-                signers: config.signers,
-                signedMintValidationParams: config.signedMintValidationParams,
+                signers: 0xfCe4b31128100915f2980BBC3a08894Ee5e8F8C3,
+                signedMintValidationParams: 0,5,1721672940,1721676540,5,1000,1000,
                 disallowedSigners: config.disallowedSigners
             })
         );
 
         // Set the base URI to "https://apple.com/"
-        this.setBaseURI("https://apple.com/");
+        this.setBaseURI("https://boredapeyachtclub.com/api/mutants/");
 
         // Transfer ownership to the new owner.
-        transferOwnership(newOwner);
+        transferOwnership(0x20e6827B8899692066e82CA22fE43Dbc9Fd70033);
     }
     /**
      * @notice Update the allowed SeaDrop contracts.
